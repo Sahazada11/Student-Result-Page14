@@ -1,0 +1,13 @@
+{% extends "app1/base.html" %}
+{% block content %}
+<form method="POST"> 
+    {% csrf_token %}
+    <table class="table table-bordered table-primary caption-top"> 
+    <caption>Add Student Mark</caption>
+    {{form.as_table}}
+    </table>
+    <center>
+        <input type="submit" class="btn btn-primary" value="Add Student">
+    </center>
+</form>
+{% endblock content %}
